@@ -1,0 +1,273 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto-regular', sans-serif;
+    background-color: #37384E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Roboto-bold', sans-serif;
+    letter-spacing: 0.1rem;
+    font-size: 2.5rem;
+}
+
+
+
+.join-text {
+    max-width: 350px;
+    margin-bottom: 2rem;
+}
+
+p {
+    color: #37384E;
+    font-size: 0.9rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    border-radius: 1.5rem;
+    margin: 2rem;
+    padding: 1.5rem 1.5rem 1.5rem 4rem;
+    max-width: 900px;
+}
+
+.info-form {
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+.mobile-image {
+    display: none;
+}
+
+.desktop-image {
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+form label {
+    font-family: 'Roboto-bold', sans-serif;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    color: rgb(45, 45, 72);
+}
+
+.label-and-error {
+    display: flex;
+    justify-content: space-between;
+}
+
+.error-field {
+    color: red;
+}
+
+.inputerror {
+    color: red;
+    border: 1.5px solid red;
+    background-color: #f8d7da;
+}
+
+.inputerror:focus {
+    border-color: red;
+}
+
+form input {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+    border: 1.5px solid #a4a5ae;
+}
+
+
+button {
+    border-radius: 6px;
+    padding: 1rem;
+    background-color: #37384E;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+}
+
+form input[type="submit"] {
+    background-color: #37384E;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.mylist {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2.5rem;
+}
+
+.mylist li {
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.mylist li p {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0.5rem;
+}
+
+.mylist li::before {
+    content: '';
+	position: absolute;
+	left: 0;
+	width: 1.5em;
+	height: 1.5em;
+    background-repeat: no-repeat;
+    padding-right: 0.5rem;
+    background-image: url('../assets/images/icon-list.svg');
+}
+
+dialog {
+    height: 350px;
+    width: 350px;
+    border-radius: 1rem;
+    border: none;
+    padding: 3rem;
+}
+
+dialog::backdrop {
+    background-color: hsla(235, 19%, 26%, 0.878);
+}
+
+dialog h1 {
+    font-family: 'Roboto-bold', sans-serif;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+dialog p {
+    margin-bottom: 2rem;
+}
+
+
+@media (max-width: 912px) {
+
+    body {
+        width: 100%;
+    }
+
+    .wrapper {
+        width: 100%;
+       
+    }
+
+
+    .mobile-image {
+        display: none;
+
+    }
+
+    .desktop-image img {
+        display: inline-block;
+        width: 350px;
+        object-fit: contain;
+
+    }
+}
+
+@media (max-width: 541px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 414px) {
+
+    dialog {
+        height: 100%;
+        width: 100%;
+        padding: 0rem 2rem;
+    }
+
+    dialog .dismiss-btn {
+       max-width: 320px;
+       margin-bottom: 2rem;
+    }
+
+    .mobile-image {
+        display: block;
+    }
+
+    .desktop-image {
+        display: none;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 0rem 0rem 1.5rem 0rem;
+        margin: 0;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .wrapper form {
+        margin-bottom: 2rem;
+    }
+
+    dialog {
+        height: 100%;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    dialog .dismiss-btn {
+        position: absolute;
+        bottom: 0;
+    }
+
+ @media (max-width: 283px) {
+
+ .image-container  {
+    margin-left: -1.5rem;
+  
+ }
+
+ dialog p {
+    padding: 0;
+    max-width: 220px;
+ }
+
+ dialog .dismiss-btn {
+    max-width: 220px;
+    /* margin-bottom: 5rem; */
+ }
+
+}
+
+}

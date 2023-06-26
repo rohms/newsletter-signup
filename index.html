@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./styles/font-styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    /* * { outline: 1px solid red !important } */
+  </style>
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+<div class="wrapper">
+  <div class="image-container mobile-image">
+    <img src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration">
+  </div>
+  <div class="info-form">
+    <h1>Stay updated!</h1>
+
+    <p class="join-text">Join 60,000+ product managers receiving monthly updates on:</p>
+
+    <ul class="mylist">
+      <li><p>Product discovery and building what matters</p></li>
+      <li><p>Measuring to ensure updates are a success</p></li>
+      <li><p>And much more!</p></li>
+    </ul>
+
+  
+<form>
+  <span class="label-and-error"><label>Email address</label><span class="error-field"></span></span>
+  <input type="email" placeholder="email@company.com" />
+
+  <input type="submit" value="Subscribe to monthly newsletter" />
+</form>
+</div>
+<div class="image-container desktop-image">
+  <img src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration">
+</div>
+</div>
+
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+<dialog>
+  <img src="./assets/images/icon-success.svg" alt="checkmark icon">
+  <h1>Thanks for subscribing!</h1>
+
+  <p>A confirmation email has been sent to <b class="inserted-email"></b> 
+  Please open it and click the button inside to confirm your subscription.</p>
+
+  <button class="dismiss-btn">Dismiss message</button>
+</dialog>
+  <!-- Success message end -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Roosa H.</a>.
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
